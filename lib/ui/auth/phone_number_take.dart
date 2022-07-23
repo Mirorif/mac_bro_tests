@@ -70,7 +70,7 @@ class PhoneNumberTakePage extends GetView<AuthController> {
                                 return 'error_otp'.tr;
                               } else {
                                 ctr.createUserConfirm(passwordController.text.tr, passCode);
-                                if(ctr.accessToken == null) {
+                                if(ctr.accessToken ==null) {
                                   return 'error_otp'.tr;
                                 } else {
                                   return null;
